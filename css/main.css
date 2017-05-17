@@ -1,0 +1,399 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+h1, h2, h4, h5, ul, p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    color: #fcff19;
+    background-color: #000000;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.main-header {
+    text-align: center;
+
+}
+
+.logo {
+    position: absolute;
+    top: 17px;
+}
+
+.list-menu {
+    font-size: 0px;
+}
+
+.main-menu {
+    position: absolute;
+    right: 0;
+    margin-top: 23px;
+    z-index: 1;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 23px;
+    font-size: 15px;
+    line-height: 20px;
+    vertical-align: middle;
+
+}
+
+.menu-item:last-of-type {
+    margin-right: 0px;
+}
+
+.link {
+    display: block;
+    padding: 14px 14px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+    width: 221px;
+    background-color: #fcff19;
+    border-radius: 0 10px 10px 12px;
+}
+
+.menu-item:hover > a {
+    background-color: #fcff19;
+    color: #000000;
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu .link {
+    color: #000000;
+}
+
+.slider-first {
+    text-align: center;
+    height: 980px;
+    background: url("../img/slider-photo1.jpg") no-repeat center;
+}
+
+.headline-promo {
+    padding-top: 400px;
+}
+
+.slider-title {
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+}
+
+.text {
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 33px;
+    color: #ffffff;
+}
+
+.yellow {
+    color: #fcff19;
+}
+
+.categories {
+    padding-bottom: 170px;
+    text-align: center;
+    background: url("../img/categories-bg.jpg");
+}
+
+.category {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+
+}
+
+.category:last-child {
+    margin-right: 0;
+}
+
+.row-title {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+}
+
+.inner-text {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+.category-name {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #fcff19;
+}
+
+.category::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 288px solid #fcff19;
+    opacity: 0.169;
+    border-right: 346px solid transparent;
+    z-index: 100;
+}
+
+.category-description {
+    color: #ffffff;
+    margin-bottom: 39px;
+}
+
+.go {
+    display: none;
+    position: relative;
+    max-width: 125px;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 102;
+}
+
+.category:hover::after {
+    display: block;
+}
+
+.category:hover .go {
+    display: inline-block;
+}
+
+.popular-bikes-box {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.gallery-bikes {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.top-bike {
+    float: left;
+    margin-right: 20px;
+}
+
+.top-bike:last-of-type {
+    margin-right: 0;
+}
+
+.bike-text {
+    float: left;
+}
+
+.bike-manage {
+    float: right;
+}
+
+.bike-name {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.bike-price {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.wrapper-select {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+}
+
+.wrapper-select select {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.select-list {
+    display: none;
+    position: absolute;
+}
+
+.select-btn {
+    width: 120px;
+    padding-left: 20px;
+    text-align: left;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #8f8f8f;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.box-arrow {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+
+.wrapper-select button {
+    width: 140px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact-us {
+    text-align: center;
+    height: 634px;
+    background: url("../img/contact-bg.jpg");
+}
+
+.contact-form {
+    width: 449px;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+
+}
+
+.form-row {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+.contact-form input, textarea {
+    outline: none;
+    border: 1px solid #8f8f8f;
+    border-radius: 10px;
+
+}
+
+.contact-form input[type=email], input[type=submit], textarea {
+    width: 100%;
+}
+
+.contact-form input[type=text] {
+    width: 212px;
+}
+
+.contact-form input[type=text], input[type=email], textarea {
+    padding-left: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+textarea {
+    height: 150px;
+    padding-top: 23px;
+    resize: none;
+}
+
+.form-row input[name=name] {
+    margin-right: 20px;
+}
+
+.contact-form input[type=submit] {
+    background-color: #b7b7b7;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.text-please {
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.main-footer {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #fcff19;
+}
+
+.main-footer .logo {
+    top: -14px;
+}
+
+.bottom-navigation {
+    float: right;
+}
+
+.bottom-navigation .menu-item {
+    margin-right: 35px;
+}
+
+.bottom-navigation .menu-item:last-of-type {
+    margin-right: 0;
+}
+
+.bottom-navigation .link {
+    padding: 0;
+    color: #000000;
+}
+.show{
+    display:block;
+}
