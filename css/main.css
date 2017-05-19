@@ -123,7 +123,7 @@ a {
     transition-timing-function: linear;
 }
 
-.slider-overflow-opacity {
+.slider-opacity {
     opacity: 0.3;
 }
 
@@ -176,29 +176,6 @@ a {
     height: 120%;
 }
 
-#first:checked ~ .slider-overflow {
-    transform: translate(0);
-
-}
-
-#second:checked ~ .slider-overflow {
-    transform: translate(-1381px);
-}
-
-#third:checked ~ .slider-overflow {
-    transform: translate(-2762px);
-
-}
-
-#forth:checked ~ .slider-overflow {
-    transform: translate(-4143px);
-
-}
-
-#fifth:checked ~ .slider-overflow {
-    transform: translate(-5524px);
-
-}
 
 #first:checked ~ .slider-navigation label[for="first"] {
     animation: modal 2s;
