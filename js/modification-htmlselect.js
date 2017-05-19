@@ -11,7 +11,6 @@ for (let i = 0; btnOptions.length > i; i++) {
 function show() {
     let elem = this;
     if (document.querySelector(".show") && elemLastClick != elem) {
-        console.log("a");
         document.querySelector(".show").classList.remove("show");
     }
     elemLastClick = this;
