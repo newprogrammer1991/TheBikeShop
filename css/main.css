@@ -128,7 +128,7 @@ a {
 }
 
 .slider {
-    width: 1381px;
+    width: calc(100%/5);
     float: left;
     text-align: center;
     height: 980px;
