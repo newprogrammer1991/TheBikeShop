@@ -2,7 +2,7 @@
     let radioButtons = document.querySelectorAll("input[name=toogle]");
     let sliderOverflow=document.querySelector(".slider-overflow");
 
-    for (let i=0;radioButtons.length;i++){
+    for (let i=0;radioButtons.length>i;i++){
         radioButtons[i].addEventListener("change",function () {
         changeSlider(i)
         })
