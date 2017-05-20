@@ -113,20 +113,24 @@ a {
     position: relative;
     width: 100%;
     overflow: hidden;
+
 }
 
 .slider-overflow {
     width: 500%;
+    transition: 0.5s linear;
+
+}
+
+.slider-opacity {
+    opacity: 0;
+}
+.slider{
     transition-property: opacity;
     transition-delay: 0s;
     transition-duration: 0.5s;
     transition-timing-function: linear;
 }
-
-.slider-opacity {
-    opacity: 0.3;
-}
-
 .slider {
     width: calc(100%/5);
     float: left;
@@ -149,7 +153,7 @@ a {
 }
 
 .slideshow input[type="radio"] {
-    display: none;
+display: none;
 }
 
 .slider-navigation {
